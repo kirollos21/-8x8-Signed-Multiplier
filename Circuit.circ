@@ -70,35 +70,43 @@
     <a name="simulationFrequency" val="2048000.0"/>
     <comp lib="0" loc="(150,330)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(230,330)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(310,330)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="O7"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(400,330)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="O6"/>
+      <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(490,330)" name="Pin">
+    <comp lib="0" loc="(500,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="I5"/>
     </comp>
-    <comp lib="0" loc="(570,330)" name="Pin">
+    <comp lib="0" loc="(550,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="O5"/>
+      <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(660,330)" name="Pin">
+    <comp lib="0" loc="(590,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="I4"/>
     </comp>
-    <comp lib="0" loc="(750,330)" name="Pin">
+    <comp lib="0" loc="(630,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="O4"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(760,460)" name="Constant"/>
     <comp lib="1" loc="(150,400)" name="NOT Gate">
@@ -113,16 +121,16 @@
     <comp lib="1" loc="(400,400)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(490,400)" name="NOT Gate">
+    <comp lib="1" loc="(680,330)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(570,400)" name="NOT Gate">
+    <comp lib="1" loc="(760,330)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(660,400)" name="NOT Gate">
+    <comp lib="1" loc="(850,330)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(750,400)" name="NOT Gate">
+    <comp lib="1" loc="(940,330)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
     <comp lib="3" loc="(210,450)" name="Adder">
