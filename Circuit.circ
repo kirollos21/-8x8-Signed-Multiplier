@@ -42,7 +42,11 @@
     </tool>
   </lib>
   <lib desc="#Memory" name="4"/>
-  <lib desc="#I/O" name="5"/>
+  <lib desc="#I/O" name="5">
+    <tool name="Button">
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
   <lib desc="#TTL" name="6"/>
   <lib desc="#TCL" name="7"/>
   <lib desc="#Base" name="8"/>
@@ -90,7 +94,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="16.0"/>
+    <a name="simulationFrequency" val="32.0"/>
     <comp lib="0" loc="(1150,230)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="A0"/>
@@ -148,9 +152,9 @@
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1780,80)" name="Clock">
-      <a name="highDuration" val="10"/>
+      <a name="highDuration" val="20"/>
       <a name="label" val="Clk"/>
-      <a name="lowDuration" val="10"/>
+      <a name="lowDuration" val="20"/>
     </comp>
     <comp lib="0" loc="(1840,1070)" name="Splitter">
       <a name="facing" val="west"/>
@@ -194,10 +198,6 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="B7"/>
     </comp>
-    <comp lib="0" loc="(2010,80)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-    </comp>
     <comp lib="0" loc="(2160,570)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="8"/>
@@ -240,6 +240,8 @@
     </comp>
     <comp lib="0" loc="(4180,2160)" name="Clock">
       <a name="facing" val="north"/>
+      <a name="highDuration" val="3"/>
+      <a name="lowDuration" val="3"/>
     </comp>
     <comp lib="0" loc="(4250,2100)" name="Constant">
       <a name="width" val="2"/>
@@ -328,6 +330,10 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="2"/>
     </comp>
+    <comp lib="5" loc="(2010,80)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="label" val="BTNC"/>
+    </comp>
     <comp lib="5" loc="(2410,1900)" name="LED"/>
     <comp lib="5" loc="(2410,1920)" name="LED"/>
     <comp lib="5" loc="(2410,1940)" name="LED"/>
@@ -352,7 +358,7 @@
     </comp>
     <comp lib="5" loc="(4290,1870)" name="Button">
       <a name="facing" val="south"/>
-      <a name="label" val="INC"/>
+      <a name="label" val="BTNL"/>
     </comp>
     <comp lib="5" loc="(4340,1890)" name="7-Segment Display">
       <a name="labelvisible" val="true"/>
@@ -368,7 +374,7 @@
     </comp>
     <comp lib="5" loc="(4790,1870)" name="Button">
       <a name="facing" val="south"/>
-      <a name="label" val="DEC"/>
+      <a name="label" val="BTNR"/>
     </comp>
     <comp loc="(1500,230)" name="eightbit2compliment"/>
     <comp loc="(1730,1020)" name="shiftLeftReg"/>
