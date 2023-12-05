@@ -20,7 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module shift_left_register(
-
-    );
+module shift_left_register(input clk, load, en,[7:0]Num, output reg[15:0]Out );
+integer i;
+always @(posedge clk) begin 
+    if(load)begin
+        Out<={8'b0,Num};
+    end
+    else begin
+        if(en)begin 
+            for(i=1; i<16;i=i+1)begin
+                Out[i]<=Out[i-1];
+            end
+             Out[0]<=1'b0;
+         end
+    end
+end
 endmodule
+
