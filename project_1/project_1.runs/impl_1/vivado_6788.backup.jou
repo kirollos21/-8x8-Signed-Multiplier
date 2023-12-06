@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec  6 04:13:46 2023
+# Process ID: 6788
+# Current directory: C:/Users/ahmedeallam/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log clockDivider.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source clockDivider.tcl -notrace
+# Log file: C:/Users/ahmedeallam/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/clockDivider.vdi
+# Journal file: C:/Users/ahmedeallam/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1\vivado.jou
+# Running On: CSE-P07-2165-52, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34019 MB
+#-----------------------------------------------------------
+source clockDivider.tcl -notrace
