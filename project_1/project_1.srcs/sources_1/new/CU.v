@@ -1,26 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 12/04/2023 03:45:15 PM
-// Design Name: 
-// Module Name: CU
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module CU(input b0, z, load, output Psel, EP, EA, EB, LA, LB, RstP);
 
-module CU(
+assign Psel = b0;
+assign EP = (b0 & ~(load));
+assign EA = (~(z) | load);
+assign EB = (~(z) | load);
+assign LA = load;
+assign LB = load;
+assign RstP = load;
 
-    );
 endmodule
