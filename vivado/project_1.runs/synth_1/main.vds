@@ -1,0 +1,491 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Dec  9 00:29:46 2023
+# Process ID: 26136
+# Current directory: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1/main.vds
+# Journal file: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1\vivado.jou
+# Running On: CSE-P07-2165-52, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34019 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10120
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/main.v:15]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/clockDivider.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counterModN' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+	Parameter X bound to: 32 - type: integer 
+	Parameter N bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counterModN' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/clockDivider.v:14]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/debouncer.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/debouncer.v:13]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/synchronizer.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/synchronizer.v:11]
+INFO: [Synth 8-6157] synthesizing module 'shift_right_register' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/shift_right_register.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_right_register' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/shift_right_register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'shift_left_register' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/shift_left_register.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'shift_left_register' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/shift_left_register.v:13]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/CU.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/CU.v:15]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/BCD.v:15]
+	Parameter W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/BCD.v:15]
+WARNING: [Synth 8-689] width (20) of port connection 'bcd' does not match port width (21) of module 'BCD' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/main.v:119]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scroller' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:14]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider__parameterized0' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/clockDivider.v:14]
+	Parameter N bound to: 250000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counterModN__parameterized0' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+	Parameter X bound to: 32 - type: integer 
+	Parameter N bound to: 250000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counterModN__parameterized0' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider__parameterized0' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/clockDivider.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counterModN__parameterized1' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+	Parameter X bound to: 2 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counterModN__parameterized1' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/counterModN.v:14]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_decoder' [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_seg_decoder.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_decoder' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_seg_decoder.v:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:121]
+WARNING: [Synth 8-567] referenced signal 'segment_internal' should be on the sensitivity list [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:120]
+WARNING: [Synth 8-567] referenced signal 'digit_selection' should be on the sensitivity list [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:120]
+WARNING: [Synth 8-567] referenced signal 'sign' should be on the sensitivity list [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scroller' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/seven_segment_scroller.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/sources_1/new/main.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1285.430 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/cons1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Num2[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num2[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Num1[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[0]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[1]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[2]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[3]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[4]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[5]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[6]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[7]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[8]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[8]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[9]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[9]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[10]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[10]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[11]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[11]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[12]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[12]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[13]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[13]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[14]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[14]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[15]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Output[15]'. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1354.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1354.348 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 35    
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	  12 Input    7 Bit        Muxes := 5     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 35    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     3|
+|4     |LUT2   |    28|
+|5     |LUT3   |     9|
+|6     |LUT4   |    32|
+|7     |LUT5   |    91|
+|8     |LUT6   |   125|
+|9     |FDCE   |    52|
+|10    |FDRE   |    79|
+|11    |IBUF   |    20|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.348 ; gain = 68.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1354.348 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1354.348 ; gain = 68.918
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1354.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1354.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 24f9b23f
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 72 Warnings, 67 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1354.348 ; gain = 68.918
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  9 00:30:30 2023...

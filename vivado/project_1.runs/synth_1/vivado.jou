@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Dec  9 00:29:46 2023
+# Process ID: 26136
+# Current directory: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1/main.vds
+# Journal file: C:/Users/ahmedeallam/Downloads/final_el_final_mn_allam/project_1.runs/synth_1\vivado.jou
+# Running On: CSE-P07-2165-52, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34019 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
