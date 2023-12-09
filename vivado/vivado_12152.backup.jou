@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec  6 17:04:18 2023
+# Process ID: 12152
+# Current directory: C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20116 C:\Users\eslamtawfik\Desktop\8-Bit-Signed-Multiplier\project_1\project_1.xpr
+# Log file: C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/vivado.log
+# Journal file: C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1\vivado.jou
+# Running On: CSE-P07-2165-06, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34016 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Test.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top main [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Test_mltiplier [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+source Test_mltiplier.tcl
+add_bp {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.srcs/sim_1/new/Test_mltiplier.v} 37
+remove_bps -file {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.srcs/sim_1/new/Test_mltiplier.v} -line 37
+close_sim
+close_hw_manager
+launch_simulation
+source Test_mltiplier.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top clockDivider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source Test.tcl
+close_sim
+launch_simulation
+source Test.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source Test.tcl
+close_sim
+launch_simulation
+source Test.tcl
+close_sim
+launch_simulation
+source Test.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source Test.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top main [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Test_mltiplier [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Test_mltiplier.tcl
+update_compile_order -fileset sources_1
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+close_sim
+launch_simulation
+source Test_mltiplier.tcl
+remove_forces { {/Test_mltiplier/m/A_shifted} }
+relaunch_sim
+relaunch_sim
+close [ open C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.srcs/constrs_1/new/test.xdc w ]
+add_files -fileset constrs_1 C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.srcs/constrs_1/new/test.xdc
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/eslamtawfik/Desktop/8-Bit-Signed-Multiplier/project_1/project_1.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+close_design
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
